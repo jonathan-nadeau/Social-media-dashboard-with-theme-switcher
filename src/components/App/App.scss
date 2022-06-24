@@ -1,0 +1,36 @@
+@import '../../scss/variables.scss';
+
+.app {
+  &--dark {
+    background-color: $dark-backgound;
+    color: $dark-text;
+  }
+  &--light {
+    background-color: $light-backgound;
+    color: $light-text;
+  }
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: $desktopSmall-breakpoint) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

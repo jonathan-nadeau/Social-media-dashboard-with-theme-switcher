@@ -1,0 +1,139 @@
+@import '../../scss/variables.scss';
+
+.text-red {
+  color: $bright-red;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.text-green {
+  color: $lime-green;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  padding: 2.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  text-align: center;
+
+  &--dark {
+    @extend .card;
+    background-color: $dark-cardBg;
+
+    &--hover {
+      background-color: lighten($dark-cardBg, 4%);
+      cursor: pointer;
+    }
+  }
+
+  &--light {
+    @extend .card;
+    background-color: $light-cardBg;
+
+    &--hover {
+      background-color: darken($light-cardBg, 4%);
+      cursor: pointer;
+    }
+  }
+
+  &--facebook {
+    @extend .card;
+    border-top: 6px solid $facebook-blue;
+  }
+
+  &--twitter {
+    @extend .card;
+    border-top: 6px solid $twitter-blue;
+  }
+
+  &--instagram {
+    @extend .card;
+    border-top: 6px solid transparent;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      background-image: $instagram-colors;
+      width: 100%;
+      height: 6px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
+
+  &--youtube {
+    @extend .card;
+    border-top: 6px solid $youtube-red;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    pointer-events: none;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    &--dark {
+      @extend .card__header;
+      color: $dark-textMuted;
+    }
+
+    &--light {
+      @extend .card__header;
+      color: $light-textMuted;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+    img {
+      margin-right: 0.3rem;
+    }
+
+    .followersAmount {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      span {
+        font-size: 1rem;
+        display: block;
+        font-weight: 400;
+        letter-spacing: 0.4rem;
+      }
+    }
+
+    &--dark {
+      @extend .card__body;
+      color: $dark-text;
+      span {
+        color: $dark-textMuted;
+      }
+    }
+
+    &--light {
+      @extend .card__body;
+      color: $light-text;
+      span {
+        color: $light-textMuted;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+}

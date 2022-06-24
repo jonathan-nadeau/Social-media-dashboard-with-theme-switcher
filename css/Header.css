@@ -1,0 +1,26 @@
+.header {
+  padding: 1.9rem 0;
+  border-bottom: 1px solid #8b97c6;
+}
+.header__subtitle, .header__subtitle--light, .header__subtitle--dark {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.header__subtitle--dark {
+  color: #8b97c6;
+}
+.header__subtitle--light {
+  color: #63687e;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    border: none;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

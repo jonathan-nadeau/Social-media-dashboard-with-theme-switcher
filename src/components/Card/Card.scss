@@ -1,0 +1,93 @@
+@import '../../scss/variables.scss';
+
+.text-red {
+  color: $bright-red;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.text-green {
+  color: $lime-green;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.Card {
+  padding: 2.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  text-align: center;
+
+  &--dark {
+    @extend .Card;
+    background-color: $dark-cardBg;
+
+    &--hover {
+      background-color: lighten($dark-cardBg, 4%);
+      cursor: pointer;
+    }
+  }
+
+  &--light {
+    @extend .Card;
+    background-color: $light-cardBg;
+
+    &--hover {
+      background-color: darken($light-cardBg, 4%);
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    pointer-events: none;
+
+    &--dark {
+      @extend .Card__header;
+      color: $dark-textMuted;
+    }
+
+    &--light {
+      @extend .Card__header;
+      color: $light-textMuted;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    pointer-events: none;
+    &--dark {
+      @extend .Card__info;
+      color: $dark-text;
+    }
+
+    &--light {
+      @extend .Card__info;
+      color: $light-text;
+    }
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__amount {
+    font-size: 3rem;
+    pointer-events: none;
+
+    &--dark {
+      @extend .Card__amount;
+      color: $dark-text;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.app--dark {
+  background-color: #1e202a;
+  color: white;
+}
+.app--light {
+  background-color: white;
+  color: #1e202a;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=App.css.map */

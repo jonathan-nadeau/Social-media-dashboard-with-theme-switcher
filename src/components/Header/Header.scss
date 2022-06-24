@@ -1,0 +1,30 @@
+@import '../../scss/variables.scss';
+
+.header {
+  padding: 1.9rem 0;
+  border-bottom: 1px solid $dark-textMuted;
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    &--dark {
+      @extend .header__subtitle;
+      color: $dark-textMuted;
+    }
+    &--light {
+      @extend .header__subtitle;
+      color: $light-textMuted;
+    }
+  }
+}
+
+@media screen and (min-width: $desktopSmall-breakpoint) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    border: none;
+  }
+}

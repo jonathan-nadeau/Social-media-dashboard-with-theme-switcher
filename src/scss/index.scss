@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import './variables.scss';
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 375px;
+  padding: calc(8px + 1.5625vw);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .container {
+    max-width: $tablet-breakpoint;
+  }
+}
+
+@media screen and (min-width: $desktopSmall-breakpoint) {
+  .container {
+    max-width: $desktopSmall-breakpoint;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .container {
+    max-width: $desktop-breakpoint;
+  }
+}

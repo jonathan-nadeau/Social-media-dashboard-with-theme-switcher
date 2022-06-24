@@ -1,0 +1,62 @@
+@import '../../scss/variables.scss';
+
+.toggle {
+  padding: 1.9rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__name {
+    &--dark {
+      @extend .toggle__name;
+      color: $dark-textMuted;
+    }
+    &--light {
+      @extend .toggle__name;
+      color: $light-textMuted;
+    }
+  }
+  &__button {
+    width: 55px;
+    height: 26px;
+    position: relative;
+    border-radius: 25px;
+
+    &--dark {
+      @extend .toggle__button;
+      background: $dark-toggleBg;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $dark-backgound;
+        transform: translate(3px, 3px);
+        transition: transform 200ms ease-in-out;
+      }
+    }
+    &--light {
+      @extend .toggle__button;
+      background-color: $light-toggleBg;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $light-backgound;
+        transform: translate(32px, 3px);
+        transition: transform 200ms ease-in-out;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .toggle__name {
+    margin-right: 1rem;
+  }
+}

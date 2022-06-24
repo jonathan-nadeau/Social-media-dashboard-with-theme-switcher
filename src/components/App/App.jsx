@@ -4,7 +4,6 @@ import data from '../../data/data';
 
 //components
 import Header from '../Header/Header';
-import Toggle from '../Toggle/Toggle';
 import SocialCards from '../SocialCards/SocialCards';
 import Title from '../Title/Title';
 import FacebookCard from '../Card/FacebookCard/FacebookCard';

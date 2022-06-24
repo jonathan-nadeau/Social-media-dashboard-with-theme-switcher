@@ -14,7 +14,7 @@ Démo: https://jn-social-media-dashboard.netlify.app/
 
 ## Installation :
 
-- Cloner le projet sur votre ordinateur local
+- Cloner le projet sur un ordinateur local
   ```git
   git clone https://github.com/jonathan-nadeau/Social-media-dashboard-with-theme-switcher.git
   ```
@@ -22,11 +22,11 @@ Démo: https://jn-social-media-dashboard.netlify.app/
   ```npm
   npm install
   ```
-- Exécuter l'application en moe développement
+- Exécuter l'application en mode développement
   ```npm
   npm start
   ```
-- Génère l'application pour la production dans le dossier `build`.\
+- Génère l'application pour la production dans le dossier `build`
 
   ```npm
   npm run build

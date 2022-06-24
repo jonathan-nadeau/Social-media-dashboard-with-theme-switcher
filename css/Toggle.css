@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .toggle__name, .toggle__name--dark, .toggle__name--light {
     margin-right: 1rem;
   }
